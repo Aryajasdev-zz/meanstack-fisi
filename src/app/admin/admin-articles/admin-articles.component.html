@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <app-admin-sidebar></app-admin-sidebar>
+    <!-- Page Content  -->
+    <div id="content">
+      <app-admin-topbar></app-admin-topbar>
+      <div class="row">
+          <div class="col-md-10">
+              <h2>Articles</h2>   
+          </div>
+          <div class="col-md-2">
+              <a href="article.php" class="btn btn-primary">
+                  <i class="fa fa-plus"></i> New Article
+              </a>
+          </div>
+      </div>    
+      <hr />
+      <div class="row">
+          <div class="col-md-12">
+              <table class="posts-table table table-striped">
+                  <tbody>
+                      <tr>
+                          <th>Title</th>
+                          <th>Tags</th>
+                          <th>Publish Date</th>
+                          <th class="text-center">Published</th>
+                          <th></th>
+                      </tr>
+                      <tr class="ng-scope">
+                          <td >My First Blog</td>
+                          <td >anupam kher</td>
+                          <td >20/06/2018</td>
+                          <td ><!-- ngIf: post.publish --><i ng-if="post.publish" class="glyphicon glyphicon-ok ng-scope"></i><!-- end ngIf: post.publish --></td>
+                          <td class="action-icons">
+                              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                          </td>
+                      </tr><!-- end ngRepeat: post in vm.posts -->
+                  </tbody>
+              </table>       
+          </div>
+          <!-- /. PAGE INNER  -->
+      </div>
+    </div>
+  </div>        
+      
+  
+  
